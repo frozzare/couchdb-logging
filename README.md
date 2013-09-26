@@ -21,12 +21,13 @@ define('CB_PASSWORD', 'password');
 ?>
 ```
 
-If no CouchDB options is defined it will go to localhost. Now you are ready to start logging!
+If no CouchDB options is defined it will use the host `127.0.0.1`, the default port `5984` and the database name `wordpress-logging` . Now you are ready to start logging!
 
 ```php
 <?php
 
-couchdb_log('info', array('status' => 'ok')); // Will return the document from the database or false if something goes wrong.
+// Will return the document from the database or false if something goes wrong.
+couchdb_log('info', array('status' => 'ok'));
 
 ?>
 ```
