@@ -49,3 +49,4 @@ Get all logs from the database
 ## Todo
 
 * Add WordPress view where you can sort and view the logs.
+* Fix so it don't break the site when Sag failes.
