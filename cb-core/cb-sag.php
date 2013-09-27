@@ -88,12 +88,12 @@ class CouchDB_Sag {
    */
 
   private function setup_sag () {
-    $host       = defined(CB_HOST) ? CB_HOST : '127.0.0.1';
-    $port       = defined(CB_PORT) ? CB_PORT : '5984';
-    $database   = defined(CB_NAME) ? CB_NAME : 'wordpress-logging';
-    $user       = defined(CB_USER) ? CB_USER : null;
-    $password   = defined(CB_PASSWORD) ? CB_PASSWORD : null;
-    $type       = defined(CB_AUTH_TYPE) ? CB_AUTH_TYPE : null;
+    $host       = defined('CB_HOST') ? CB_HOST : '127.0.0.1';
+    $port       = defined('CB_PORT') ? CB_PORT : '5984';
+    $database   = defined('CB_NAME') ? CB_NAME : 'wordpress-logging';
+    $user       = defined('CB_USER') ? CB_USER : null;
+    $password   = defined('CB_PASSWORD') ? CB_PASSWORD : null;
+    $type       = defined('CB_AUTH_TYPE') ? CB_AUTH_TYPE : null;
 
     if (!isset($this->sag)) {
       self::$sag = new Sag($host, $port);
